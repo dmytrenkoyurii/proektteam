@@ -1,0 +1,26 @@
+$red: #c0301c;
+$white: #ffffff;
+$gray: #555555;
+$black: #000000;
+// color: $red;
+@mixin r400 {
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: 400;
+}
+
+@mixin r700 {
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: 700;
+}
+
+@mixin m400 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+@mixin m700 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+// @include к300;
