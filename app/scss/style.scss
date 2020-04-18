@@ -74,4 +74,102 @@
 }
 
 // HEADER END
+// SERVICES START
+.services__inner {
+    padding: 100px 0;
+    text-align: center;
+    .services__items {
+        display: flex;
+        justify-content: space-between;
+        .services__item {
+            max-width: 350px;
+            height: 100%;
+            .services__item--img {
+                width: 90px;
+                height: 90px;
+                margin: 0 auto;
+                margin-bottom: 25px;
+            }
+            .services__item--title {
+                @include m400;
+                font-size: 18px;
+                text-transform: uppercase;
+                margin-bottom: 25px;
+            }
+            .services__item--text {
+                @include r400;
+                text-align: left;
+                margin-left: 20px;
+                li {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}
+
+// SERVICES END
+// ABOUT START
+.about {
+    background-color: #e6e6e6;
+}
+
+.container {}
+
+.about__inner {
+    padding: 100px 0;
+    text-align: center;
+    .about__info {
+        display: flex;
+        margin-bottom: 60px;
+        .about__info--text {
+            width: 50%;
+            text-align: left;
+            margin-left: 15px;
+            margin-right: 15px;
+            @include r400;
+            font-size: 16px;
+        }
+    }
+    .about__price-items {
+        display: flex;
+        justify-content: space-between;
+        .about__price-item {
+            width: 230px;
+            .about__price-item--img {
+                overflow: hidden;
+                cursor: pointer;
+                img {
+                    width: 230px;
+                    height: 240px;
+                    margin-bottom: 15px;
+                    transition: 1s;
+                    &:hover {
+                        transform: scale(1.15);
+                    }
+                }
+            }
+            .about__price-item--info {
+                .about__price-item--title {
+                    @include m700;
+                    font-size: 14px;
+                    margin-bottom: 10px;
+                }
+                .about__price-item--price {
+                    @include r400;
+                    font-size: 16px;
+                    margin-bottom: 10px;
+                    span {
+                        @include r700;
+                        font-size: 22px;
+                        margin: 0 5px;
+                        color: $red;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// ABOUT END
 @import 'media';
