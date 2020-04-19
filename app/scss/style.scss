@@ -14,6 +14,7 @@
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1;
 }
 
 .header-top__inner {
@@ -134,6 +135,7 @@
     .about__price-items {
         display: flex;
         justify-content: space-between;
+        margin-bottom: 30px;
         .about__price-item {
             width: 230px;
             .about__price-item--img {
@@ -169,7 +171,107 @@
             }
         }
     }
+    .about__btn {
+        .btn-danger {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+    }
 }
 
 // ABOUT END
+// GALLERY START
+.gallery__inner {
+    padding: 100px 0;
+    text-align: center;
+    .my-gallery {
+        a {
+            display: inline-block;
+            position: relative;
+            margin: 10px;
+            transition: 1s;
+            .my-gallery__hover {
+                display: none;
+                color: $white;
+                .my-gallery__hover--title {
+                    @include r400;
+                    font-size: 18px;
+                    margin-bottom: 10px;
+                    margin-top: 10px;
+                    padding: 0 10px;
+                }
+                .my-gallery__hover--text {
+                    @include m400;
+                    font-size: 14px;
+                    margin-bottom: 25px;
+                    padding: 0 10px;
+                }
+                .my-gallery__hover--btn {
+                    margin: 0 auto;
+                    @include r400;
+                    font-size: 14px;
+                    color: $red;
+                    background-color: $white;
+                    max-width: 150px;
+                    padding: 10px 5px;
+                }
+            }
+            &:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: rgba(192, 48, 28, .7);
+                opacity: 0;
+            }
+            &:hover {
+                transform: scale(1.05);
+                .my-gallery__hover {
+                    display: block;
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    top: 50px;
+                }
+            }
+            &:hover:before,
+            &:hover:after {
+                opacity: 1;
+            }
+            img {
+                width: 320px;
+                height: 280px;
+            }
+        }
+    }
+}
+
+// GALLERY END
+// FOOTER START
+.footer {
+    background-color: $red;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    .footer__logo img {
+        width: 250px;
+    }
+    .footer__info {
+        text-align: right;
+        color: $white;
+        @include m400;
+        font-size: 12px;
+        a {
+            color: $white;
+        }
+    }
+}
+
+// FOOTER END
 @import 'media';
