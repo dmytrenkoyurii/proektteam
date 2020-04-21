@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 
 <head>
     <meta charset="UTF-8">
@@ -10,44 +10,47 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 </head>
 
 <body>
     <!-- HEADER -->
     <header class="header" style="background-image: url(images/header-bg1.jpg);">
-        <div class="header-top">
+        <div class="header-top animated fadeInDown">
             <div class="container">
                 <div class="header-top__inner row">
-                    <div class="header-top__logo col">
+                    <div class="header-top__logo col animated fadeInDownBig">
                         <a href="#">
-                            <img src="images/logo2.png" alt="">
+                            <img src="images/logo2.png" alt="Logo">
                         </a>
                     </div>
-                    <div class="header-top__phone col">
+                    <div class="header-top__phone col animated fadeInDownBig">
                         <a href="tel:+380501947493">+38 (050) 194 74 93</a>
                     </div>
-                    <div class="header-top__mail col">
+                    <div class="header-top__mail col animated fadeInDownBig">
                         <a href="mailto:ukr.proekt.team@gmail.com">ukr.proekt.team@gmail.com</a>
                     </div>
-                    <div class="header-top__btn col">
-                        <button type="button" class="btn btn-danger">Зв'язатись з нами</button>
+                    <div class="header-top__btn col animated fadeInDownBig">
+                        <a href="#contact" class="btn btn-danger">Зв'язатись <span>з нами</span></a>
                     </div>
                 </div>
             </div>
         </div>
         <div class="header-main">
             <div class="container">
-                <div class="header-main__inner">
-                    <div class="header-main__title">
+                <div class="header-main__inner animated fadeInUp">
+                    <h1 class="header-main__none">Креслення, розрахунок, дизайн, планування, перепланування, інженер в Полтаві, Полтава</h1>
+                    <h2 class="header-main__title animated fadeInUpBig">
                         Cучасні інженерні рішення на основні Ваших побажань
-                    </div>
-                    <div class="header-main__text">
+                    </h2>
+                    <h2 class="header-main__text animated fadeInUpBig">
                         Від одного креслення чи розрахунку - до комплексного проекту будь-якої складності
-                    </div>
+                    </h2>
                 </div>
-                <div class="header-main__btn">
-                    <button type="button" class="btn btn-danger btn-lg">Наші послуги</button>
+                <div class="header-main__btn animated fadeInUpBig">
+                    <a href="#about" class="btn btn-danger btn-lg">Наші послуги</a>
                 </div>
             </div>
         </div>
@@ -56,15 +59,25 @@
     <section class="services">
         <div class="container">
             <div class="services__inner">
-                <div class="services__title title">
-                    Наші послуги
-                </div>
+                <h3 class="services__title title">
+                    Про нас
+                </h3>
                 <div class="services__text text">
-                    Якісне виконання роботи та відповідальні люди - майбутнє вашого проекту
+                    "PROEKT Team" - це сучасні архітектурні та інженерні рішення на основі Ваших побажань
+                </div>
+                <div class="services__info">
+                    <div class="services__info--text animated wow fadeInLeftBig">
+                        Пропонуємо Вам послуги по розрахунку та проектуванню житлових будинків, промислових будівель, перевірку несучої здатності та креслення окремих елементів і конструкцій, а також сучасні архітектурно-будівельні рішення на основні Ваших побажань. У нас Ви
+                        можете замовити від одного креслення чи розрахунку - до комплексного проекту будь-якої складності за вигідною для Вас ціною.
+                    </div>
+                    <div class="services__info--text animated wow fadeInRightBig">
+                        Ми - команда з досвідом роботи від 5 років над проектами різної складності. Відповідально ставимось до будь якого проєкту та маємо індивідуальний підхід до кожного клієнта. Враховуємо всі побажання клієнта та надамо наші консультації, засновані на досвіді
+                        та сучасних тенденціях. Ми вирішимо вашу проблему. Ми зробимо все для того щоб клієнт залишився задоволений після нашої співпраці.
+                    </div>
                 </div>
                 <div class="services__items">
-                    <div class="services__item">
-                        <div class="services__item--img" style="background-image: url(../images/service-1.png);"></div>
+                    <div class="services__item animated wow fadeInUpBig">
+                        <div class="services__item--img" style="background-image: url(../images/service1.png);"></div>
                         <div class="services__item--title">
                             Розрахунок та проектування
                         </div>
@@ -78,8 +91,8 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="services__item">
-                        <div class="services__item--img" style="background-image: url(../images/service-2.png);"></div>
+                    <div class="services__item animated wow fadeInUpBig">
+                        <div class="services__item--img" style="background-image: url(../images/service2.png);"></div>
                         <div class="services__item--title">
                             Архітектурно-Проектні Роботи
                         </div>
@@ -91,8 +104,8 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="services__item">
-                        <div class="services__item--img" style="background-image: url(../images/service-3.png);"></div>
+                    <div class="services__item animated wow fadeInUpBig">
+                        <div class="services__item--img" style="background-image: url(../images/service3.png);"></div>
                         <div class="services__item--title">
                             Дизайн Інтер'єрів, Планування
                         </div>
@@ -114,78 +127,71 @@
     <section class="about">
         <div class="container">
             <div class="about__inner">
-                <div class="about__title title">
-                    Про нас
-                </div>
+                <h3 id="about" class="about__title title">
+                    Наші послуги
+                </h3>
                 <div class="about__text text">
-                    "PROEKT Team" - це сучасні архітектурні та інженерні рішення на основі Ваших побажань
+                    Якісне виконання роботи та відповідальні люди - майбутнє вашого проекту
                 </div>
-                <div class="about__info">
-                    <div class="about__info--text">
-                        Пропонуємо Вам послуги по розрахунку та проектуванню житлових будинків, промислових будівель, перевірку несучої здатності та креслення окремих елементів і конструкцій, а також сучасні архітектурно-будівельні рішення на основні Ваших побажань. У нас Ви
-                        можете замовити від одного креслення чи розрахунку - до комплексного проекту будь-якої складності за вигідною для Вас ціною.
-                    </div>
-                    <div class="about__info--text">
-                        Ми - команда з досвідом роботи від 5 років над проектами різної складності. Відповідально ставимось до будь якого проєкту та маємо індивідуальний підхід до кожного клієнта. Враховуємо всі побажання клієнта та надамо наші консультації, засновані на досвіді
-                        та сучасних тенденціях. Ми вирішимо вашу проблему. Ми зробимо все для того щоб клієнт залишився задоволений після нашої співпраці.
-                    </div>
-                </div>
+
                 <div class="about__price-items">
                     <div class="about__price-item">
-                        <div class="about__price-item--img">
-                            <img src="images/about-1.jpg " alt=" ">
+                        <div class="about__price-item--img animated wow fadeInUpBig">
+                            <img src="images/about-1.jpg " alt="about-img">
                         </div>
                         <div class="about__price-item--info">
-                            <div class="about__price-item--title">
+                            <div class="about__price-item--title animated wow fadeInUpBig">
                                 Заміри Існуючих Приміщень та їх Креслення
                             </div>
-                            <div class="about__price-item--price">
+                            <div class="about__price-item--price animated wow fadeInUpBig">
                                 від <span>1000</span> грн
                             </div>
                         </div>
                     </div>
                     <div class="about__price-item">
-                        <div class="about__price-item--img">
-                            <img src="images/about-2.jpg " alt=" ">
+                        <div class="about__price-item--img animated wow fadeInUpBig">
+                            <img src="images/about-2.jpg " alt="about-img">
                         </div>
                         <div class="about__price-item--info">
-                            <div class="about__price-item--title">
+                            <div class="about__price-item--title animated wow fadeInUpBig">
                                 Дизайн Інтер'єрів Квартир та Будинків
                             </div>
-                            <div class="about__price-item--price">
+                            <div class="about__price-item--price animated wow fadeInUpBig">
                                 від <span>1000</span> грн
                             </div>
                         </div>
                     </div>
                     <div class="about__price-item">
-                        <div class="about__price-item--img">
-                            <img src="images/about-3.jpg " alt=" ">
+                        <div class="about__price-item--img animated wow fadeInUpBig">
+                            <img src="images/about-3.jpg " alt="about-img">
                         </div>
                         <div class="about__price-item--info ">
-                            <div class="about__price-item--title ">
+                            <div class="about__price-item--title animated wow fadeInUpBig">
                                 Проектування Навісів (під автостоянки та ін.)
                             </div>
-                            <div class="about__price-item--price ">
+                            <div class="about__price-item--price animated wow fadeInUpBig">
                                 від <span>1500</span> грн
                             </div>
                         </div>
                     </div>
                     <div class="about__price-item ">
-                        <div class="about__price-item--img">
-                            <img src="images/about-4.jpg " alt=" ">
+                        <div class="about__price-item--img animated wow fadeInUpBig">
+                            <img src="images/about-4.jpg " alt="about-img">
                         </div>
                         <div class="about__price-item--info ">
-                            <div class="about__price-item--title ">
+                            <div class="about__price-item--title animated wow fadeInUpBig">
                                 Комплексне Архітектурно-Будівельне Рішення
                             </div>
-                            <div class="about__price-item--price ">
+                            <div class="about__price-item--price animated wow fadeInUpBig">
                                 від <span>5000</span> грн
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="about__btn">
-                    <button type="button" class="btn btn-danger">ЗАВАНТАЖИТИ ПОВНИЙ ПРАЙС (*.jpg)</button>
+                <div class="about__btn animated wow fadeInUpBig">
+                    <a class="btn btn-danger" data-fancybox="" href="images/price.jpg">
+                        ПОКАЗАТИ ПОВНИЙ ПРАЙС (*.jpg)
+                    </a>
                 </div>
             </div>
         </div>
@@ -194,15 +200,15 @@
     <section class="gallery">
         <div class="container">
             <div class="gallery__inner">
-                <div class="gallery__title title">
+                <h3 class="gallery__title title">
                     Останні проекти
-                </div>
+                </h3>
                 <div class="gallery__text text">
                     Наша найбільша гордість – це виконані проекти та задоволені клієнти
                 </div>
                 <div class="my-gallery">
-                    <a data-fancybox="gallery" href="images/gallery/img-1.jpg">
-                        <img src="images/gallery/img-1.jpg">
+                    <a class="animated wow fadeInLeftBig" data-wow-offset="40" data-fancybox="gallery" href="images/gallery/img-1.jpg">
+                        <img src="images/gallery/img-1.jpg" alt="gallery-photo">
                         <div class="my-gallery__hover">
                             <div class="my-gallery__hover--title">
                                 Дизайн будівлі 1
@@ -215,8 +221,8 @@
                             </div>
                         </div>
                     </a>
-                    <a data-fancybox="gallery" href="images/gallery/img-2.jpg">
-                        <img src="images/gallery/img-2.jpg">
+                    <a class="animated wow fadeInUpBig" data-wow-offset="40" data-fancybox="gallery" href="images/gallery/img-2.jpg">
+                        <img src="images/gallery/img-2.jpg" alt="gallery-photo">
                         <div class="my-gallery__hover">
                             <div class="my-gallery__hover--title">
                                 Дизайн будівлі 2
@@ -229,8 +235,8 @@
                             </div>
                         </div>
                     </a>
-                    <a data-fancybox="gallery" href="images/gallery/img-3.jpg">
-                        <img src="images/gallery/img-3.jpg">
+                    <a class="animated wow fadeInRightBig" data-wow-offset="40" data-fancybox="gallery" href="images/gallery/img-3.jpg">
+                        <img src="images/gallery/img-3.jpg" alt="gallery-photo">
                         <div class="my-gallery__hover">
                             <div class="my-gallery__hover--title">
                                 Дизайн будівлі 3
@@ -243,8 +249,8 @@
                             </div>
                         </div>
                     </a>
-                    <a data-fancybox="gallery" href="images/gallery/img-4.jpg">
-                        <img src="images/gallery/img-4.jpg">
+                    <a class="animated wow fadeInLeftBig" data-wow-offset="80" data-fancybox="gallery" href="images/gallery/img-4.jpg">
+                        <img src="images/gallery/img-4.jpg" alt="gallery-photo">
                         <div class="my-gallery__hover">
                             <div class="my-gallery__hover--title">
                                 Дизайн будівлі 4
@@ -257,8 +263,8 @@
                             </div>
                         </div>
                     </a>
-                    <a data-fancybox="gallery" href="images/gallery/img-5.jpg">
-                        <img src="images/gallery/img-5.jpg">
+                    <a class="animated wow fadeInUpBig" data-wow-offset="80" data-fancybox="gallery" href="images/gallery/img-5.jpg">
+                        <img src="images/gallery/img-5.jpg" alt="gallery-photo">
                         <div class="my-gallery__hover">
                             <div class="my-gallery__hover--title">
                                 Дизайн будівлі 5
@@ -271,8 +277,8 @@
                             </div>
                         </div>
                     </a>
-                    <a data-fancybox="gallery" href="images/gallery/img-6.jpg">
-                        <img src="images/gallery/img-6.jpg">
+                    <a class="animated wow fadeInRightBig" data-wow-offset="80" data-fancybox="gallery" href="images/gallery/img-6.jpg">
+                        <img src="images/gallery/img-6.jpg" alt="gallery-photo">
                         <div class="my-gallery__hover">
                             <div class="my-gallery__hover--title">
                                 Дизайн будівлі 6
@@ -289,33 +295,106 @@
             </div>
         </div>
     </section>
+    <!-- LIKE -->
+    <section class="parallax" style="background-image: url(images/parallax-bg3.jpg);">
+        <div class="like">
+            <div class="container">
+                <div class="like__inner">
+                    <h3 class="like__title title">
+                        Сподобались наші роботи?
+                    </h3>
+                    <div class="like__text text">
+                        Не зволікайте та заповнюйте форму зв'язку нижче
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTS AND FORM -->
+    <section id="contact" class="contacts">
+        <div class="container">
+            <div class="contacts__inner">
+                <h3 class="contacts__title title">
+                    Зв'язатися з нами
+                </h3>
+                <div class="contacts__text text">
+                    Ми враховуємо всі побажання клієнта та надамо наші консультації, основані на досвіді та сучасних тенденціях
+                </div>
+                <div class="contacts-block">
+                    <div class="contacts__items wow animated fadeInLeftBig" data-wow-offset="40">
+                        <div class="contacts-block__item">
+                            <div class="contacts-block__title-map">
+                                Адреса:
+                            </div>
+                            <div class="contacts-block__text">
+                                м. Полтава
+                                <br> Україна
+                            </div>
+                        </div>
+                        <div class="contacts-block__item">
+                            <div class="contacts-block__title-phone">
+                                Телефон:
+                            </div>
+                            <div class="contacts-block__text">
+                                <a href="tel:+380501947493">+38 (050) 194 74 93 (Viber, WhatsApp)</a>
+                                <a href="tel:+380679201414">+38 (067) 920 14 14</a>
+                            </div>
+                        </div>
+                        <div class="contacts-block__item">
+                            <div class="contacts-block__title-mail">
+                                E-mail:
+                            </div>
+                            <div class="contacts-block__text">
+                                <a href="mailto:ukr.proekt.team@gmail.com">ukr.proekt.team@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contacts-form wow animated fadeInRightBig" data-wow-offset="40">
+                        <form class="contact__form" method="POST" id="feedback-form" action="php/contacts.php">
+                            <input type="text" name="nameFF" placeholder="ВАШЕ ІМ'Я*" required>
+                            <div class="contact__form--name">
+                                <input type="tel" name="phoneFF" placeholder="ТЕЛЕФОН*" required>
+                                <input type="email" name="contactFF" placeholder="E-MAIL*" required>
+                            </div>
+                            <textarea rows="4" name="messageFF" placeholder="НАПИШІТЬ ВАШЕ ПОВІДОМЛЕННЯ*" required></textarea>
+                            <button type="submit"> ВІДПРАВИТИ </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- FOOTER -->
     <footer class="footer">
         <div class="container">
             <div class="footer__inner">
-                <div class="footer__logo">
+                <div class="footer__logo  wow animated fadeInLeft">
                     <a href="#">
-                        <img src="images/logo3.png" alt="">
+                        <img src="images/logo3.png" alt="photo-logo">
                     </a>
                 </div>
-                <div class="footer__info">
+                <div class="footer__info  wow animated fadeInRight">
                     © 2020 ProektTeam
-                    <br> Developed by <b><a href="#">Yurii Horskyi</a></b>
-                    <br> Designed by <b><a href="#">Tetiana Zavoloko</a></b>
-
+                    <br> Developed by <b><a href="https://www.linkedin.com/in/dmytrenkoyurii/">Yurii Horskyi</a></b>
+                    <br> Designed by <b><a href="https://www.behance.net/tanyazavoloko/">Tetiana Zavoloko</a></b>
                 </div>
             </div>
         </div>
     </footer>
 
     <!-- Підключення JQuery  -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js " integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n " crossorigin="anonymous "></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js " integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6 " crossorigin="anonymous "></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js " integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n " crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js " integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6 " crossorigin="anonymous"></script>
     <!-- Бібліотека всіх плагінів -->
     <script src="js/libs.min.js "></script>
     <script src="js/main.js "></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="js/parlx.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 </body>
 
 </html>

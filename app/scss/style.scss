@@ -29,23 +29,42 @@
     div {
         display: flex;
         align-items: center;
-        a:hover {
-            color: $gray;
-        }
     }
     .header-top__logo img {
         width: 200px;
     }
+    .header-top__btn {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .header-top__logo {
+        animation-delay: 0.2s;
+    }
+    .header-top__phone {
+        animation-delay: 0.4s;
+    }
+    .header-top__mail {
+        animation-delay: 0.6s;
+    }
+    .header-top__btn {
+        animation-delay: 0.8s;
+    }
 }
 
 .header-main {
-    padding-top: 250px;
+    padding-top: 200px;
     .header-main__inner {
         margin: 0 auto;
         text-align: center;
         color: $white;
         background-color: rgba(85, 85, 85, 0.5);
         max-width: 900px;
+        position: relative;
+        .header-main__none {
+            position: absolute;
+            color: transparent;
+            font-size: 56px;
+        }
         .header-main__title {
             @include m700;
             font-size: 48px;
@@ -63,14 +82,26 @@
     .header-main__btn {
         text-align: center;
         margin-top: 40px;
-        button {
+        a {
             text-align: center;
             @include m400;
             font-size: 20px;
             text-transform: uppercase;
             padding-left: 40px;
             padding-right: 40px;
+            &:hover {
+                color: $white;
+            }
         }
+    }
+    .header-main__title {
+        animation-delay: 0.2s;
+    }
+    .header-main__text {
+        animation-delay: 0.4s;
+    }
+    .header-main__btn {
+        animation-delay: 0.6s;
     }
 }
 
@@ -79,6 +110,18 @@
 .services__inner {
     padding: 100px 0;
     text-align: center;
+    .services__info {
+        display: flex;
+        margin-bottom: 60px;
+        .services__info--text {
+            width: 50%;
+            text-align: left;
+            margin-left: 15px;
+            margin-right: 15px;
+            @include r400;
+            font-size: 16px;
+        }
+    }
     .services__items {
         display: flex;
         justify-content: space-between;
@@ -86,10 +129,18 @@
             max-width: 350px;
             height: 100%;
             .services__item--img {
-                width: 90px;
-                height: 90px;
+                width: 120px;
+                height: 120px;
                 margin: 0 auto;
                 margin-bottom: 25px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                transition: 1s;
+                cursor: pointer;
+                &:hover {
+                    transform: scale(1.2);
+                }
             }
             .services__item--title {
                 @include m400;
@@ -120,20 +171,9 @@
 .about__inner {
     padding: 100px 0;
     text-align: center;
-    .about__info {
-        display: flex;
-        margin-bottom: 60px;
-        .about__info--text {
-            width: 50%;
-            text-align: left;
-            margin-left: 15px;
-            margin-right: 15px;
-            @include r400;
-            font-size: 16px;
-        }
-    }
     .about__price-items {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         margin-bottom: 30px;
         .about__price-item {
@@ -156,11 +196,13 @@
                     @include m700;
                     font-size: 14px;
                     margin-bottom: 10px;
+                    animation-delay: 0.4s;
                 }
                 .about__price-item--price {
                     @include r400;
                     font-size: 16px;
                     margin-bottom: 10px;
+                    animation-delay: 0.8s;
                     span {
                         @include r700;
                         font-size: 22px;
@@ -172,6 +214,7 @@
         }
     }
     .about__btn {
+        animation-delay: 1.2s;
         .btn-danger {
             padding-left: 30px;
             padding-right: 30px;
@@ -249,6 +292,155 @@
 }
 
 // GALLERY END
+// LIKE START
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .like {
+        background-color: rgba(192, 48, 28, .8);
+        .like__inner {
+            padding: 70px 0 10px 0;
+            text-align: center;
+            color: $white;
+            .like__title {}
+            .like__text {}
+        }
+    }
+}
+
+// LIKE END
+// CONTACTS START
+.contacts__inner {
+    padding: 100px 0;
+    text-align: center;
+    .contacts-block {
+        display: flex;
+        justify-content: space-between;
+        .contacts__items {
+            max-width: 270px;
+            width: 100%;
+            text-align: left;
+            .contacts-block__item {
+                margin-left: 25px;
+                .contacts-block__title-map,
+                .contacts-block__title-phone,
+                .contacts-block__title-mail {
+                    @include m400;
+                    font-size: 14px;
+                    margin-bottom: 10px;
+                    text-transform: uppercase;
+                    position: relative;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        background-repeat: no-repeat;
+                        left: -25px;
+                    }
+                }
+                .contacts-block__title-map {
+                    &::before {
+                        background-image: url(../images/logo-map.png);
+                        background-size: 12px 17px;
+                        width: 12px;
+                        height: 17px;
+                    }
+                }
+                .contacts-block__title-phone {
+                    &::before {
+                        background-image: url(../images/logo-phone.png);
+                        background-size: 12px 20px;
+                        width: 12px;
+                        height: 20px;
+                    }
+                }
+                .contacts-block__title-mail {
+                    &::before {
+                        background-image: url(../images/logo-mail.png);
+                        background-size: 15px 11px;
+                        width: 15px;
+                        height: 11px;
+                        top: 3px;
+                    }
+                }
+                .contacts-block__text {
+                    @include r400;
+                    font-size: 12px;
+                    margin-bottom: 30px;
+                    & a {
+                        @include r400;
+                        font-size: 13px;
+                        color: $gray;
+                        display: block;
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+        }
+        .contacts-form {
+            max-width: 700px;
+            width: 100%;
+            .contact__form {
+                input {
+                    height: 45px;
+                    width: 100%;
+                    padding-left: 15px;
+                    margin-bottom: 20px;
+                    outline-color: $red;
+                    color: $gray;
+                    @include r400;
+                    font-size: 12px;
+                    border: 1px solid #555555;
+                }
+                .contact__form--name {
+                    display: flex;
+                    justify-content: space-between;
+                    input {
+                        height: 45px;
+                        width: 48%;
+                    }
+                }
+                textarea {
+                    height: 80px;
+                    width: 100%;
+                    color: $gray;
+                    @include r400;
+                    font-size: 12px;
+                    border: 1px solid $gray;
+                    margin-bottom: 15px;
+                    padding: 15px;
+                    outline-color: $red;
+                }
+                button {
+                    background-color: transparent;
+                    border: 1px solid $gray;
+                    padding: 10px 25px;
+                    display: block;
+                    margin-bottom: 20px;
+                    transition: 1s;
+                    position: relative;
+                    &:hover {
+                        background-color: $red;
+                        border: 1px solid $gray;
+                    }
+                    &::after {
+                        content: "* Всі поля є обов'язковими для заповнення. Зазвичай ми відповідаємо відразу.";
+                        position: absolute;
+                        @include m400;
+                        font-size: 11px;
+                        top: 0;
+                        left: 200px;
+                        width: 300px;
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// CONTACTS END
 // FOOTER START
 .footer {
     background-color: $red;
@@ -258,15 +450,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
+    padding: 10px 0;
     .footer__logo img {
-        width: 250px;
+        width: 200px;
     }
     .footer__info {
         text-align: right;
         color: $white;
         @include m400;
-        font-size: 12px;
+        font-size: 10px;
         a {
             color: $white;
         }
